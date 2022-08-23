@@ -1,0 +1,28 @@
+<%- include ("./partials/header") %>
+
+    <div class="spinner"></div>
+    <!-- Container -->
+
+    <!-- Notifications -->
+    <div class="notification" id="added"></div>
+    <div class="notification" id="alreadyStored"></div>
+
+    <h4 style="text-align: center;" id="white" data-aos="flip-left">Top Rated Movies</h4>
+    <!-- Showcase - lists top rated movies -->
+    <div class="showcase">
+        <div id="movies" class="moviesRows"></div>
+    </div>
+
+    <div class="pages">
+        <button id="prev" title="Previous page"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+        <button id="next" title="Next page"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+    <!-- Script links -->
+    <script src="/js/config.js"></script>
+    <script src="/js/top-rated.js"></script>
+    <script src="/js/global.js"></script>
+    <!-- Axios link -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+
+    </html>
