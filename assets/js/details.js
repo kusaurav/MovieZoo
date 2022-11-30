@@ -256,19 +256,3 @@ function recommendedPage(pageNum) {
             console.log(err);
         })
 }
-
-function addToList(id) {
-    console.log(id);
-    $.ajax({
-        url: "/details",
-        data: {
-            q: id,
-        },
-        type: "POST", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
-        success: function(responseData) {
-            console.log(responseData)
-        },
-        error: console.error
-    });
-
-}

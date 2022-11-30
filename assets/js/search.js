@@ -757,7 +757,7 @@ function movieByYearPage(pageNum){
 function movieByGenrePage(pageNum){
         //Get the selected element ID from the sessionStorage.
         let genre = sessionStorage.getItem("genre");
-        axios.get("https://api.themoviedb.org/3/discover/movie?api_key="+API_KEY+'&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&with_genres='+genre)
+        axios.get("https://api.themoviedb.org/3/discover/movie?api_key="+API_KEY+'&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&true='+pageNum+'&with_genres='+genre)
             .then((response)=>{
                 let movie = response.data.results;
                 let output = "";

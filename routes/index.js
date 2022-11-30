@@ -28,7 +28,6 @@ module.exports = {
                 UN = "saurav";
             }
             // console.log("After:"+UN)
-
             let query = "SELECT * FROM `" + UN + "`";
             db.query(query, function(err, result, fields) {
                 if (err) {

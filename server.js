@@ -33,8 +33,8 @@ app.get('/signup', signUp);
 var db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'saurav52270',
-    database: 'movies'
+    password: 'sk123',
+    database: 'shopsee'
 });
 
 
@@ -123,7 +123,7 @@ handleDisconnect(db);
 
 app.post("/search", function(req, res) {
     let movieId = req.body.q
-        //console.log(movieId)
+
     let addQuery = "INSERT INTO `" + UN + "` (`movie_id`) VALUES ('" + movieId + "')";
     db.query(addQuery, function(err, result) {
         if (err) {
