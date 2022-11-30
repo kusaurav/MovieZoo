@@ -13,7 +13,9 @@ module.exports = {
         res.render('search.ejs');
     },
 
-
+    compare: function(req,res){
+        res.render('compare.ejs');
+    },
     details: function(req, res) {
         res.render('details.ejs');
     },

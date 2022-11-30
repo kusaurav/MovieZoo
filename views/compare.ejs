@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/408/premium/408477.png?token=exp=1644323748~hmac=c30c06817c204852866d075526a52be9" >
+    <link rel="stylesheet" href="/css/compare.css" />
+  </head>
+  <title>Compare Movie</title>
+  <body>
+    <div >
+        <nav>
+            <div style="background-color: #a00808;">
+                <ul  >
+                    <span><a id="nav-menu" class="active" href="/" style="font-size: 27px; "><i class="fa fa-film" aria-hidden="true"></i> Latest</a></span>
+                    <span><a id="nav-menu" class="active"href="/topRated" style="font-size: 27px; "><i class="fa fa-fire" aria-hidden="true" ></i> Top Rated</a></span>
+                    <span><a id="nav-menu" class="active" href="/search" style="font-size: 27px; "><i  class="fa fa-search" aria-hidden="true"></i> Search</a></span>
+                    <span><a id="nav-menu" class="active" href="/compare" style="font-size: 27px; "><i class="fa fa-trophy" aria-hidden="true"></i> Compare</a></span>
+                    <span><a id="nav-menu" class="active" href="/watchList" style="font-size: 27px; "><i class="fa fa-list" aria-hidden="true"></i> Watchlist</a></span>
+                </ul>
+            </div>
+        </nav>
+    <div class="container">
+   <div class="container">
+       <div class="columns">
+           <div class="column">
+               <div id="left-autocomplete"></div>
+               <div id="left-summary"></div>
+           </div>
+           <div class="column">
+               <div id="right-autocomplete"></div>
+               <div id="right-summary"></div>
+           </div>
+       </div>
+       <div class="column is-half notification is-primary tutorial">
+           <h1 class="title">Search for a Movie on both Sides</h1>
+           <p class="subtitle">We will tell you which is best</p>
+       </div>
+   </div>
+  
+    <script src="/js/utils.js"></script>
+    <script src="/js/autocomplete.js"></script>
+    <script src="/js/compare.js"></script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ var session = require('express-session');
 
 var app = express();
 
-var { latest, topRated, search, watchList, details, signIn, signUp } = require('./routes/index');
+var { latest, topRated, search, watchList, details, signIn, signUp, compare} = require('./routes/index');
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/assets"));
@@ -27,6 +27,7 @@ app.get('/watchList', watchList);
 app.get('/details', details);
 app.get('/signin', signIn);
 app.get('/signup', signUp);
+app.get('/compare', compare);
 
 //database connection
 
