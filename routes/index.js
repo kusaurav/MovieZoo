@@ -21,8 +21,6 @@ module.exports = {
     },
 
     watchList: function(req, res) {
-        // console.log("not local:"+UN)
-        //console.log("Before:"+UN+ "l"+UN.length)
         if (!req.session.loggedin) {
             res.redirect('/signup')
         } else {
@@ -39,11 +37,8 @@ module.exports = {
                     info: result,
                     title: UN
                 });
-
-                //console.log(result)
             });
         }
-        // handleDisconnect(db);
     },
 
 

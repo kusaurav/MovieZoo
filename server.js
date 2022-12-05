@@ -35,7 +35,7 @@ var db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'sk123',
-    database: 'shopsee'
+    database: 'moviezoo'
 });
 
 
@@ -122,18 +122,6 @@ app.post("/", function(req, res) {
 
 handleDisconnect(db);
 
-app.post("/search", function(req, res) {
-    let movieId = req.body.q
-
-    let addQuery = "INSERT INTO `" + UN + "` (`movie_id`) VALUES ('" + movieId + "')";
-    db.query(addQuery, function(err, result) {
-        if (err) {
-            console.log("3 could not insert!")
-            res.redirect('/');
-        }
-
-    });
-});
 
 handleDisconnect(db);
 
